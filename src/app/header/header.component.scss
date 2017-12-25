@@ -1,0 +1,35 @@
+$padding: 200px;
+$letter: #835ca8;
+
+h1{
+	color: $letter;
+}
+h2{
+	padding-top:$padding;
+	color: $letter;
+	font-size: 60px;
+}
+header{
+	background-image: url('/assets/image/1.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 713px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*{
+	font-family: 'Oswald', sans-serif;
+}
+
+/*Button-Menu in header*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/*Button-Menu in header*/
