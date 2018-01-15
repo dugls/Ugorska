@@ -1,13 +1,22 @@
-<header>
+<header> 
 	<div class = 'container-fluid'>
 		<div class = 'row'>
 			<div class = 'col-md-12'>
-				<h1>{{logo}}</h1>
-				<a class="container col-md-1 col-md-push-11" [@menuAnimate] = 'off' href = '#' (click) = 'menuAnimate()'>
- 				 	<div class="bar1" > </div>
-  					<div class="bar2"[@child] = 'off' ></div>
- 					<div class="bar3" ></div>
+			<div class = 'top-fixed navbar-fixed-top'>
+				<a href = '#' id = 'logo' class = 'col-md-1 animated flipInY' [@logoAnimate]><h1>{{logo}}</h1></a>
+				<a class="col-md-5 col-md-push-10 cross " href = '#' (click) = 'barsAnimate()' (click)= 'toggle()'>
+					<div class = 'bars'>
+	 				 	<div class="bar1" ></div>
+	  					<div class="bar2" ></div>
+	 					<div class="bar3" ></div>
+	 				</div>
+	 				<div class ='dropdown-list col-md-3 col-md-pull-1' *ngIf="state" [@fadeInOut]>
+	 				<a href ='#' class = 'first-list'>Fist</a>
+	 				<a href ='#' class = 'second-list'>Second</a>
+	 				<a href ='#' class = 'third-list'>Third</a>
+	 			</div>
 				</a>
+			</div>
 				<h2 class = 'text-center'>{{slogan}}</h2>
 			</div>
 		</div>
