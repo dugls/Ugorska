@@ -1,7 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import { trigger,state,style,transition,animate,keyframes, query, group} from '@angular/animations';
-const TweenMax = require('gsap')
-
+import { TweenLite } from 'gsap'
 
 @Component({
   selector: 'app-header',
