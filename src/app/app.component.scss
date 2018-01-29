@@ -1,0 +1,14 @@
+$blue: red;
+
+h1{
+	color: $blue;
+}
+.container-fluid{
+	background-image: url('/assets/images/back-main.jpg');
+    width: 100%;
+	height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

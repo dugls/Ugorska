@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ugor</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <!-- Последняя компиляция и сжатый CSS -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Дополнение к теме -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Последняя компиляция и сжатый JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Comfortaa" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+
+
+</head>
+<body>
+  <app-root>
+ 	        <style type="text/css">
+            #pre-bootstrap {
+                background-color: #262626 ;
+                bottom: 0px ;
+                left: 0px ;
+                position: fixed ;
+                right: 0px ;
+                top: 0px ;
+                z-index: 999999 ;
+            }
+            #pre-bootstrap div.messaging {
+                color: #FFFFFF ;
+                font-family: monospace ;
+                left: 0px ;
+                margin-top: -37px ;
+                position: absolute ;
+                right: 0px ;
+                text-align: center ;
+                top: 50% ;
+            }
+            #pre-bootstrap h1 {
+                font-size: 26px ;
+                line-height: 35px ;
+                margin: 0px 0px 20px 0px ;
+            }
+           .loader {
+                font-size: 10px;
+                margin: 50px auto;
+                text-indent: -9999em;
+                width: 11em;
+                height: 11em;
+                border-radius: 50%;
+                background: #ffffff;
+                background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+                position: relative;
+                -webkit-animation: load3 1.4s infinite linear;
+                animation: load3 1.4s infinite linear;
+                -webkit-transform: translateZ(0);
+                -ms-transform: translateZ(0);
+                transform: translateZ(0);
+                margin-left: 40px;
+          }
+        .loader:before {
+          width: 50%;
+          height: 50%;
+          background: #ffffff;
+          border-radius: 100% 0 0 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+        }
+        .loader:after {
+          background: #262626;
+          width: 75%;
+          height: 75%;
+          border-radius: 50%;
+          content: '';
+          margin: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+        </style>
+
+        <div id="pre-bootstrap">
+            <div class="messaging">
+                <h1>
+                    Завантаження сайту...
+                </h1>
+            <div class = 'loader col-md-1 col-md-push-5'></div>
+            </div>
+          
+        </div>
+  </app-root>
+</body>
+</html>

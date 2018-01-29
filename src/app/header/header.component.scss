@@ -1,0 +1,52 @@
+$padding: 200px;
+$letter: white;
+
+h1{
+  color: $letter;
+}
+h2{
+  padding-top:$padding;
+  color: $letter;
+  font-size: 60px;
+}
+header{
+  background-image: url('/assets/images/1.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 713px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.dropdown-list{
+  border: 3px solid rgba(0, 0, 0, .1);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-list a{
+  text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  color: $letter;
+}
+.dropdown-list a:hover{
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  font-size:36px;
+  transition: 0.3s;
+ }
+.cross{
+    padding-top: 32px;
+}
+.bars{
+  padding-left: 20px
+}
+
+
