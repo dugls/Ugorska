@@ -1,23 +1,23 @@
-<header> 
+<header>  
   <div class = 'container-fluid'>
     <div class = 'row'>
       <div class = 'col-md-12'>
       <div class = 'top-fixed navbar-fixed-top'>
-        <a href = '#' id = 'logo' class = 'col-md-1 animated flipInY' [@logoAnimate]><h1>{{logo}}</h1></a>
-        <a class="col-md-5 col-md-push-10 cross " href = '#' (click) = 'barsAnimate()' (click)= 'toggle()'>
-          <div class = 'bars'>
-            <div class="bar1" ></div>
-            <div class="bar2" ></div>
-            <div class="bar3" ></div>
+        <a href = '#' id = 'logo' class = 'col-md-2 animated flipInY'><h1 [@navAnimate] = 'tog'>Угорська</h1></a>
+        <a class="col-md-5 col-md-push-9 cross "  href = '#' (click) = 'barsAnimate()' (click)= 'toggle()'>
+          <div class = 'bars' >
+            <div class="bar1" [@navAnimate] = 'tog' [@barsDivAnimation] = 'bars'></div>
+            <div class="bar2" [@navAnimate] = 'tog' [@barsDivAnimation] = 'bars'></div>
+            <div class="bar3" [@navAnimate] = 'tog' [@barsDivAnimation] = 'bars'></div>
           </div>
-        <div class ='dropdown-list col-md-3 col-md-pull-1' *ngIf="state" [@fadeInOut]>
-          <a href ='#' class = 'first-list'>Fist</a>
-          <a href ='#' class = 'second-list'>Second</a>
-          <a href ='#' class = 'third-list'>Third</a>
+        <div class ='dropdown-list col-md-6 col-md-pull-1' *ngIf="state" [@fadeInOut]>
+          <a href ='#' class = 'row first-list' [@navAnimate] = 'tog'>Fist</a>
+          <a href ='#' class = 'row  second-list' [@navAnimate] = 'tog'>Second</a>
+          <a href ='#' class = 'row third-list' [@navAnimate] = 'tog'>Third</a>
         </div>
         </a>
       </div>
-        <h2 class = ' col-md-1'>Слоган сасний доладний і прикольний </h2>
+        <h2 class = 'col-md-10'>Слоган сасний доладний і прикольний </h2>
       </div>
     </div>
   </div>
